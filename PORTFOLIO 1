@@ -1,0 +1,131 @@
+TASK 0
+Adrien Mendes Ramos, 18 years old I have STMG, I m good with python, html, CSS and JS.
+DISCORD 
+ALL RESPONSABILITIES, MASTER OF THE PROJECT I NEED SOME CLIENTS
+
+TASK 1
+Local Food Waste Reduction Platform
+Concept:
+A website where shop owners, restaurant managers, and individuals can offer their leftover or surplus food for free. Users can reserve items and pick them up in person.
+
+Features:
+- User and merchant registration
+- Posting of food rescue ads (including expiration date, quantity, and photo)
+- Geolocation to find available products nearby
+- Reservation system and availability notifications
+
+The project is feasible and similar to Too Good To Go, but this time everything is free. The site collaborates with merchants who register as such, and people in need. At the end of their service day, merchants give their unsold food to people in need for free. Merchants benefit by improving their brand image and increasing their notoriety through this initiative. Additionally, the project has both environmental and social impacts as it helps the most disadvantaged people and prevents food waste.
+
+Statistics showing how much food has been saved by users or merchants
+
+Database Structure:
+-Table users: personal information, role (buyer or supplier)
+- Table products: available products (name, photo, expiration date, location)
+- Table reservations: who reserved what and when
+- Table reviews: user feedback and ratings
+- Table notifications: alerts for new nearby products
+
+TASK 2
+The project is feasible and similar to Too Good To Go, but this time everything is free
+This project can have a significant environmental impact by reducing food waste and a social impact by helping people in need.
+
+IDEA
+- User and merchant registration
+- Posting of food rescue ads (including expiration date, quantity, and photo)
+- Geolocation to find available products nearby
+- Reservation system and availability notifications
+- Careful use of advertising to avoid the perception of being a profit-driven site
+
+Collaboration with associations and charities
+
+PROBLEM
+- Ensuring the quality and safety of the products offered
+- Preventing fraud and misuse
+
+TASK 3
+
+This initiative addresses food waste by connecting people in need with merchants and associations through an accessible donation system.
+
+Key components:
+User and Merchant Registration: A system for individuals and businesses to register, with different functionalities based on their roles.
+Easy and Accessible Donation System: A user-friendly platform to facilitate food donations.
+Features:
+User Registration: Allows individuals to sign up.
+Merchant Registration: Enables businesses to register and offer surplus food
+
+
+TASK 4
+
+Advertising system for site revenue
+Strengths:
+- Enables self-financing of the site (hosting, maintenance).
+- Possibility to donate a portion of the revenue to partner associations.
+
+Weaknesses:
+- May harm the project's image by making it appear too commercial.
+- Can create a negative perception (profit-oriented site).
+
+Reason for rejection or postponement:
+- Rejected for the MVP version to maintain the 100% solidarity aspect. Potentially to be reintroduced later with ethical and targeted advertising under consideration for additional funding.
+
+Direct collaboration with charitable organizations
+Strengths:
+- Strengthens the legitimacy of the project.
+- Allows better logistics for distributing donations.
+
+Weaknesses:
+- Requires official agreements and a clear legal framework.
+- Takes longer to implement.
+
+Reason:
+- Idea accepted but to be developed in parallel or in phase 2 of the project.
+
+Participatory donation model (crowdfunding or tips)
+Strengths:
+- Enhances community engagement.
+- Helps fund the project without advertising.
+
+Weaknesses:
+- Unreliable in the long term.
+- Depends on users’ willingness to contribute.
+
+Reason for rejection:
+- Insufficient to cover initial costs. Option to be reassessed after launch.
+
+
+
+Selected MVP Summary
+The chosen MVP (Minimum Viable Product) is a free web platform aimed at reducing local food waste. It allows shop owners, restaurant managers, and individuals to post their leftover or surplus food that is still consumable. Users can browse listings, reserve available items nearby, and pick them up in person.
+
+Why this MVP?
+Simplicity of implementation: the core of the project relies on basic features (registration, geolocation, posting, reservation).
+Immediate impact: it addresses two urgent issues — food insecurity and food waste.
+Accessibility: the platform is entirely free for both users and merchants, which enhances its social value.
+Inspired by existing models (such as Too Good To Go), while standing out with its 100% non-profit approach.
+
+Potential Impact
+Social impact: allows people in need to access food for free.
+Environmental impact: actively combats food waste by redistributing unsold items.
+Local impact: strengthens relationships between merchants and neighborhood residents.
+Brand image impact for merchants: improves their reputation and shows social responsibility.
+This MVP is designed as a concrete and useful first step to test the platform in a specific area before expanding with more advanced features or partnerships with charities.
+
+Team Formation & Process Overview
+The project is currently led by Adrien Mendes Ramos, 18 years old, with a background in STMG and strong technical skills in Python, HTML, CSS, and JavaScript. Adrien takes on all responsibilities as the project leader (master of the project) and is actively working to find potential clients and collaborators.
+
+Team Formation (current status):
+Solo project at the MVP stage, with Adrien handling:
+Technical development (frontend/backend)
+Project management
+Ideation and documentation
+Open to forming a larger team in the future with:
+Designers (for improved UI/UX)
+Marketing/communication support
+Association or NGO partners
+
+Process Followed:
+Idea Brainstorming – Several concepts were considered, with pros and cons analyzed (see Task 4).
+Selection of the MVP – The idea was chosen based on its simplicity, strong impact, and feasibility.
+Feature Definition – Core functionalities were defined for a minimum viable version (registration, product listings, geolocation, reservation system).
+Database Design – Tables and structure were drafted to support the platform’s features.
+Documentation and Planning – Clear planning and idea development documentation were created for organization and future team onboarding.
