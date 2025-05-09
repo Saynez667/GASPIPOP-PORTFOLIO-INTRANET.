@@ -129,3 +129,21 @@ Selection of the MVP – The idea was chosen based on its simplicity, strong imp
 Feature Definition – Core functionalities were defined for a minimum viable version (registration, product listings, geolocation, reservation system).
 Database Design – Tables and structure were drafted to support the platform’s features.
 Documentation and Planning – Clear planning and idea development documentation were created for organization and future team onboarding.
+
+
+Technologies to Use and Implementation
+To build this food waste reduction web project, the following technologies can be used to ensure a performant, user-friendly, and secure platform:
+
+Frontend (User Interface)
+HTML5 / CSS3: To structure and style the web pages.
+JavaScript (Vanilla JS or frameworks): For dynamic interactions (such as reservations or notifications).
+Recommended Framework: React.js
+➤ Why? Fast, modular, and excellent for building dynamic interfaces with reusable components.
+Backend (Server and Business Logic)
+Python (with Flask or Django):
+➤ Flask is lightweight, quick to set up, and ideal for an MVP.
+➤ Django provides a full-featured framework with built-in user management, security, and admin interface.
+REST API: To connect the frontend and backend in a clean and scalable way (e.g., for creating listings, making reservations, etc.).
+Database
+SQLite (for testing or local development) or PostgreSQL (for production)
+➤ Will store data for the users, products, reservations, reviews, and notifications tables.
