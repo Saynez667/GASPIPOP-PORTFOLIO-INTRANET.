@@ -6,7 +6,7 @@ Adrien Mendes Ramos
 
 Background: STMG
 
-Skills: Python, HTML, CSS, JavaScript
+Skills: Python, HTML, CSS, JavaScript, SQL
 
 Roles: Full-stack developer, project manager, product owner
 
