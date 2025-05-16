@@ -1,12 +1,12 @@
 Food Waste Reduction Platform — MVP
-🧑 Project Lead
+🧑
 Adrien Mendes Ramos
 18 years old
 Background: STMG
 Skills: Python, HTML, CSS, JavaScript, SQL
 Roles: Full-stack developer, project manager, product owner
 Contact: Available on Discord
-
+🧑
 Matteo Foti
 21 years old
 Background: to cook
