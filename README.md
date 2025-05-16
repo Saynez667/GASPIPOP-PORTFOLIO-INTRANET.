@@ -1,20 +1,21 @@
 Food Waste Reduction Platform — MVP
 🧑 Project Lead
 Adrien Mendes Ramos
-
 18 years old
-
 Background: STMG
-
 Skills: Python, HTML, CSS, JavaScript, SQL
-
 Roles: Full-stack developer, project manager, product owner
-
-Status: Solo developer, open to collaborators
-
 Contact: Available on Discord
 
-Objective: Looking for early users, partners, and clients
+Matteo Foti
+21 years old
+Background: to cook
+Skills: Python, HTML, CSS, JavaScript, SQL
+Roles: Full-stack developer, project manager, product owner
+Contact: Available on Discord
+
+Strategy:
+We will divide the back end and the front end equally.
 
 🔍 Project Concept
 A free web platform where shop owners, restaurant managers, and individuals can post leftover or surplus food.
@@ -125,5 +126,4 @@ Develop core MVP features
 
 Test locally with small group of users
 
-Expand to partnerships and new features in Phase 2
 
