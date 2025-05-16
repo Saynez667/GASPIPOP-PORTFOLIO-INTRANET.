@@ -1,0 +1,111 @@
+TASK 0
+Project Purpose and Objectives
+Purpose:The purpose of this project is to create a free, non-profit web platform that connects shop owners, restaurant managers, and individuals to reduce local food waste. By facilitating the redistribution of surplus or unsold food to people in need, the platform aims to address both food insecurity and environmental concerns in the community.
+
+Objectives:
+
+- Facilitate Food Redistribution:
+Enable merchants and individuals to easily post and share surplus food items, making them accessible to people in need through a simple and intuitive online reservation system.
+
+- Promote Social and Environmental Impact:
+Reduce food waste at the local level while providing immediate support to disadvantaged populations, strengthening community ties and improving the public image of participating merchants.
+
+- Ensure Accessibility and Trust:
+Provide a user-friendly, geolocated platform with real-time availability, while maintaining food safety standards and preventing misuse or fraud to ensure a trustworthy and solidarity-based environment for all users.
+
+TASK 1
+Stakeholders and Team Roles
+
+Stakeholders
+Type	Stakeholder	Description / Interest
+Internal	Adrien Mendes Ramos	Co-owner of the project, full-stack developer
+Internal	Matteo Foti	Co-owner of the project, full-stack developer
+External	End Users	People in need, shop owners, restaurant managers
+External	Instructors / Tutors (if any)	Provide guidance and feedback
+External	Potential Partners (Phase 2)	Associations, NGOs for future collaboration
+
+Team Roles and Responsibilities
+Role	Assigned To	Main Responsibilities
+Co-Project Owners	Adrien Mendes Ramos, Matteo Foti	Decision-making, setting objectives, project management
+Frontend Developer	Adrien Mendes Ramos, Matteo Foti	Frontend development (equally divided)
+Backend Developer	Adrien Mendes Ramos, Matteo Foti	Backend development and database management (equally divided)
+Product Owner	Adrien Mendes Ramos, Matteo Foti	Defining MVP features, prioritization, gathering feedback
+
+Note:
+Development work (frontend and backend) is equally divided between Adrien Mendes Ramos and Matteo Foti. Both members share responsibility for project management and feature definition.
+
+TASK 2
+
+Project Scope
+In-Scope (Core Deliverables)
+User and Merchant Registration:
+Secure sign-up and login for both individuals and merchants.
+
+Food Donation Listings:
+Ability to post available surplus food items, including photo, expiration date, quantity, and location.
+
+Geolocation-Based Product Discovery:
+Users can search for food donations available nearby.
+
+Reservation System:
+Real-time reservation of available items, with confirmation and scheduling for pickup.
+
+Basic Notifications:
+Alerts for new nearby offers and reservation confirmations.
+
+Food Waste Statistics:
+Simple dashboard showing the amount of food saved through the platform.
+
+Out-of-Scope (Not Included in MVP)
+Advanced Features:
+No advanced search filters, AI-based recommendations, or automated matching systems.
+
+Payment or Donation System:
+No integration of payment processing, crowdfunding, or tipping features.
+
+Advertising:
+No ads or promotional banners to maintain a non-profit, solidarity-focused image.
+
+Partnership Integrations:
+No direct collaboration with associations, NGOs, or logistics partners in the MVP phase (planned for future phases).
+
+Mobile App:
+No native mobile application; the MVP will be a responsive web platform only.
+
+Complex Review/Rating System:
+Only basic feedback features; advanced reputation or dispute resolution systems are out-of-scope for MVP.
+
+TASK 3
+
+Risks and Mitigation Strategies
+
+- Technical Risk	Limited experience with some technologies (e.g., React, Django/Flask)	Allocate time for tutorials and prototyping; use official documentation and community support
+- Timeline Risk	Delays due to underestimating development time or balancing other commitments	Set realistic milestones; use agile sprints; regularly review progress and adjust plans as needed
+- Team Dynamics	Only two team members; risk if one is unavailable or overloaded	Divide tasks clearly; maintain regular communication; document code and processes for continuity
+- Data Security	Risk of data breaches or improper handling of user information	Implement secure authentication; follow best practices for data storage and privacy
+- Food Safety & Liability	Users may post expired or unsafe food, leading to health risks	Add clear guidelines for donations; allow users to report unsafe items; include disclaimers
+- Fraud/Misuse	Users or merchants may abuse the system (e.g., false listings, hoarding)	Implement user reporting and moderation tools; monitor suspicious activity
+- Scalability	Platform may not handle higher traffic if demand grows quickly	Start with scalable technologies; plan for future upgrades; monitor load and performance
+- User Adoption	Difficulty attracting initial users or merchants	Prepare a simple onboarding guide; use social media and word-of-mouth; collect and act on feedback
+- Out-of-Scope Creep	Pressure to add features outside MVP scope	Clearly communicate MVP boundaries; keep a backlog for future features; review scope regularly
+
+TASK 4
+
+High-Level Project Plan
+
+Timeline Overview
+Stage	Description / Key Deliverables	Estimated Timeline
+Stage 1: Idea Development	Brainstorming, concept validation, initial research	Completed
+Stage 2: Project Charter	Define objectives, scope, stakeholders, risks, plan	Week 1
+Stage 3: Technical Documentation	Database schema, architecture diagrams, tech stack decisions, API specs	Week 2-3
+Stage 4: MVP Development	Frontend & backend coding, integration, testing	Week 4-7
+Stage 5: Project Closure	Final testing, documentation, team debrief, presentation	Week 8
+
+Key Milestones
+End of Week 1: Project Charter finalized and approved
+End of Week 3: Technical documentation completed
+End of Week 7: MVP fully developed and tested
+End of Week 8: Project closure, final presentation, and feedback collection
+
+Note:
+This plan can be adjusted based on team availability and project needs. Each stage should end with a brief review to ensure deliverables are met before moving to the next phase.
