@@ -24,6 +24,7 @@ Flask/Django: suitable for a clear REST API and robust for authentication.
 PostgreSQL: relational, well-suited for handling reservations and users.
 JWT: simple to manage in a stateless server architecture.
 Mailgun or SMTP: to avoid a real-time backend at the initial stage.
+![porfolio](https://github.com/user-attachments/assets/a9048afd-6dc6-4b95-8943-922a68df52e0)
 
 TASK 2
 
