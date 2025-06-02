@@ -87,3 +87,6 @@ React
 - MapView	          Map showing the location of offers
 
 
+TASK 3
+
+
