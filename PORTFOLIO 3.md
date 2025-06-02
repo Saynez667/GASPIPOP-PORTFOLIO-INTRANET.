@@ -25,3 +25,5 @@ PostgreSQL: relational, well-suited for handling reservations and users.
 JWT: simple to manage in a stateless server architecture.
 Mailgun or SMTP: to avoid a real-time backend at the initial stage.
 
+TASK 2
+
