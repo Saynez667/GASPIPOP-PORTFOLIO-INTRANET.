@@ -1,1 +1,159 @@
+Task 0
 
+User Stories Priorisées pour le MVP de GASPIPOP
+Must Have (Doit avoir)
+-En tant que commerçant, je veux m’inscrire et créer un profil marchand, afin de proposer mes invendus alimentaires gratuitement.
+-En tant qu’utilisateur, je veux m’inscrire et créer un compte, afin de réserver des produits alimentaires gratuits.
+-En tant que commerçant, je veux publier une annonce de don alimentaire (avec photo, date de péremption, quantité, localisation), afin de donner mes surplus à ceux qui en ont besoin.
+-En tant qu’utilisateur, je veux consulter la liste des produits disponibles près de chez moi grâce à la géolocalisation, afin de trouver facilement des dons alimentaires.
+-En tant qu’utilisateur, je veux réserver un produit et recevoir une notification de confirmation, afin de m’assurer qu’il sera disponible lors de mon passage.
+-En tant que commerçant, je veux recevoir une notification lorsqu’un utilisateur réserve un produit, afin de préparer la commande.
+
+Should Have (Devrait avoir)
+En tant qu’utilisateur, je veux laisser un avis sur un commerçant ou un don, afin d’aider la communauté à identifier les meilleurs donateurs.
+En tant que commerçant, je veux consulter des statistiques sur la quantité de nourriture donnée, afin de valoriser mon engagement contre le gaspillage.
+En tant qu’utilisateur, je veux recevoir des notifications lorsqu’un nouveau produit est publié près de chez moi, afin de ne pas rater d’opportunités.
+
+Could Have (Pourrait avoir)
+-En tant qu’association, je veux pouvoir m’inscrire et recevoir des dons groupés, afin de redistribuer à plus grande échelle.
+-En tant qu’utilisateur, je veux filtrer les annonces par type de produit (fruits, légumes, plats préparés…), afin de trouver ce qui m’intéresse.
+
+Won’t Have (N’aura pas pour le MVP)
+-Système de publicité ou de monétisation.
+-Application mobile native.
+-Filtres avancés ou recommandations automatiques.
+-Intégration complète avec des associations.
+
+
+Maquette temporaires 
+https://www.figma.com/design/Eak0pGIwKmKZ2LjAZGbLNV/Untitled?node-id=1-2&t=8ES1k7AB2QHCD7Sp-1
+
+
+TASK 2
+-------------------------------------------------------------------------------------
+
+class Lieu(models.Model):
+    nom = models.CharField(max_length=100)
+    ville = models.CharField(max_length=100)
+    departement = models.CharField(max_length=50)
+    adresse = models.CharField(max_length=255)
+    proprietaire = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='lieux'
+    )
+
+     def __str__(self):
+        return f"{self.nom} - {self.ville}"
+
+-------------------------------------------------------------------------------------
+
+
+class Offre(models.Model):
+    titre = models.CharField(max_length=100)
+    description = models.TextField(blank=True)
+    image = models.ImageField(upload_to='offres/')
+    quantite_disponible = models.IntegerField()
+    date_limite = models.DateField()
+    lieu = models.ForeignKey(Lieu, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.titre
+-------------------------------------------------------------------------------------
+
+class Reservation(models.Model):
+    utilisateur = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    date_reservation = models.DateTimeField(auto_now_add=True)
+    offre = models.ForeignKey('Offre', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Reservation of {self.offre.titre} by {self.utilisateur.username} on {self.date_reservation}"
+
+
+    def __str__(self):
+        return f"Reservation of {self.offre.titre} by {self.utilisateur.username}"
+-------------------------------------------------------------------------------------
+
+class CustomUser(AbstractUser):
+    ROLE_CHOICES = (
+        ('client', 'Client'),
+        ('commercant', 'Commerçant'),
+    )
+    role = models.CharField(max_length=20, choices=ROLE_CHOICES, default='client')
+-------------------------------------------------------------------------------------
+
+
+Composants Front-end React.js
+https://www.figma.com/design/Eak0pGIwKmKZ2LjAZGbLNV/Untitled?node-id=1-2&t=8ES1k7AB2QHCD7Sp-1
+
+
+
+task 4
+
+
+Documentation des APIs Externes et Internes — GASPIPOP
+APIs Externes Utilisées
+1. API de Géolocalisation Google
+Service : Google Geolocation API
+Pourquoi choisi : Précision élevée, fiabilité reconnue, intégration avec Google Maps
+Utilisation : Géocodage des adresses et recherche de proximité
+Endpoint : https://www.googleapis.com/geolocation/v1/geolocate
+Coût : Gratuit jusqu'à 40 000 requêtes/mois, puis $5 pour 1000 requêtes
+
+2. Service de Notifications Push - Firebase Cloud Messaging (FCM)
+Service : Google Firebase Cloud Messaging
+Pourquoi choisi : Gratuit, support multi-plateformes (web, iOS, Android), fiable
+Utilisation : Notifications de réservation, nouvelles offres, rappels
+Endpoint : https://fcm.googleapis.com/fcm/send
+Coût : Gratuit
+
+3. API de Géolocalisation IP (Alternative)
+Service : IPGeolocation.io
+Pourquoi choisi : Généreux tier gratuit (30 000 requêtes/mois), données complètes
+Utilisation : Géolocalisation automatique des utilisateurs
+Endpoint : https://api.ipgeolocation.io/ipgeo
+Coût : Gratuit jusqu'à 30 000 requêtes/mois
+
+Task 5
+
+Stratégies SCM et QA pour GASPIPOP
+Stratégie SCM (Source Code Management)
+Contrôle de Version
+Outil : Git avec hébergement sur GitHub
+Repository : Dépôt centralisé pour le projet GASPIPOP
+Accès : Adrien Mendes Ramos
+Description des branches :
+main : Branche stable pour la production, code testé et validé
+development : Branche principale pour l'intégration des fonctionnalités
+
+Politique de Commits
+Fréquence : Commits fréquents avec messages clairs
+
+Processus de Revue de Code
+Obligation : Toutes les branches feature doivent passer par une revue de code avant fusion
+Pull Requests : Utilisation systématique des pull requests pour intégrer les modifications dans development
+Critères de validation :
+Code fonctionnel et testé
+Documentation à jour
+Tests passants
+
+Stratégie de Fusion
+Méthode : Merge via pull request après validation des tests et revue
+Protection des branches : Main et development protégées contre les push directs
+
+
+Stratégie QA (Quality Assurance)
+Stratégie de Tests
+Types de tests :
+Tests unitaires : Pour les fonctions critiques du backend
+Tests d'intégration : Pour les API REST
+Tests fonctionnels manuels : Pour les parcours utilisateurs clés
+Tests de non-régression : Avant chaque déploiement
+
+Outils de Test
+Composant	Outil	Usage
+Backend	pytest	Tests unitaires et d'intégration Django
+Frontend	Jest avec React Testing Library	Tests composants React
+API	Postman	Tests manuels et automatisés des endpoints
+CI/CD	GitHub Actions	Automatisation des tests
+Backend	pytest|Tests unitaires et d'intégration Django
